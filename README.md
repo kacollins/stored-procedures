@@ -39,7 +39,7 @@ A collection of SQL statements that is stored on the database server for later e
 
 ## Stored Procedures vs Functions
 * Stored Procedure: 
-    * Executes a series of SQL statements, such as modifying data or running * complex queries
+    * Executes a series of SQL statements, such as modifying data or running complex queries
     * `EXECUTE GetEmployeesByDepartment 123`
 * Function: 
     * Returns a value or a table result that can be used in SQL
@@ -48,17 +48,19 @@ A collection of SQL statements that is stored on the database server for later e
 
 ## Why use Stored Procedures?
 
-### Aggregating data (SUM, AVG, COUNT, etc.)
+### Aggregating data
+SUM, AVG, COUNT, etc.
 
-### Batch processing - updating large sets of data in a single operation
+### Batch processing
+Updating large sets of data in a single operation
 
 ### Set of multiple SQL statements
-    * Single stored procedure call reduces network traffic
-    * Transaction ensures that the entire set succeeds or fails as a single unit
+* Single stored procedure call reduces network traffic
+* Transaction ensures that the entire set succeeds or fails as a single unit
 
 ### Performance improvements
-    * Query plan caching
-    * Indexes
+* Query plan caching
+* Indexes
 
 ## Typical Uses of Stored Procedures
 * Reports
