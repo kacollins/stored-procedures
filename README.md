@@ -1,6 +1,7 @@
 # Stored Procedures
 * Kimberly Collins
 * SQL Server database developer for 17 years
+* [github.com/kacollins/stored-procedures](https://github.com/kacollins/stored-procedures)
 
 ## What is a stored procedure?
 A collection of SQL statements stored on the database server for later execution
@@ -45,7 +46,7 @@ A collection of SQL statements stored on the database server for later execution
     * `SELECT Value FROM STRING_SPLIT('1,2,3', ',')`
 * Stored Procedure: 
     * Executes a series of SQL statements, such as modifying data or running complex queries
-    * `EXECUTE GetEmployeesByDepartment 123`
+    * `EXECUTE GetEmployeeDetails 123`
 
 ## Why use Stored Procedures?
 
@@ -73,5 +74,7 @@ Updating large sets of data in a single operation
   * As needed, usually along with an [ORM](https://www.youtube.com/watch?v=UY7PKt-p6Uk)
 
 ## Questions?
-* `#databases` channel
-* `@KimberlyCollins`
+* Techlahoma's Slack
+  * `#databases` channel
+  * `@KimberlyCollins`
+* [github.com/kacollins/stored-procedures](https://github.com/kacollins/stored-procedures)
