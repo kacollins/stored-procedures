@@ -46,16 +46,20 @@ A collection of SQL statements that is stored on the database server for later e
     * `SELECT GETDATE()`
     * `SELECT Value FROM STRING_SPLIT('1,2,3', ',')`
 
-## Stored Procedures vs Application Code
-* Aggregating data (SUM, AVG, COUNT, etc.)
-* Batch processing - updating large sets of data in a single operation
-* Set of multiple SQL statements
+## Why use Stored Procedures?
+
+### Aggregating data (SUM, AVG, COUNT, etc.)
+
+### Batch processing - updating large sets of data in a single operation
+
+### Set of multiple SQL statements
     * Single stored procedure call reduces network traffic
     * Transaction ensures that the entire set succeeds or fails as a single unit
-* Performance improvements
+
+### Performance improvements
     * Query plan caching
     * Indexes
- 
+
 ## Typical Uses of Stored Procedures
 * Reports
 * Called from back end
