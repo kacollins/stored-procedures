@@ -37,13 +37,11 @@ A collection of SQL statements stored on the database server for later execution
 | `SELECT *`<br>`FROM EmployeeSummary`<br>`WHERE EmployeeID = 123`|  `EXEC GetEmployeeDetails 123` |
 
 ## Stored Procedures vs Functions
-* Function: 
-    * Returns a value or a table result that can be used in SQL
-    * `SELECT GETDATE()`
-    * `SELECT Value FROM STRING_SPLIT('1,2,3', ',')`
-* Stored Procedure: 
-    * Executes a series of SQL statements, such as modifying data or running complex queries
-    * `EXECUTE GetEmployeeDetails 123`
+| Function | Stored Procedure |
+| ---- | ---------------- |
+| * Returns a value or a table result that can be used in SQL | *  Executes a series of SQL statements, such as modifying data or running complex queries |
+| * Can't have variables, multiple statements, or parameters | * Can have input and output parameters |
+| `SELECT GETDATE()`<br>`SELECT Value FROM STRING_SPLIT('1,2,3', ',')`|  `EXEC GetEmployeeDetails 123` |
 
 ## Why use Stored Procedures?
 
