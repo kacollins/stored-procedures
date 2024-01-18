@@ -1,4 +1,4 @@
-# Stored Procedures
+# [Stored Procedures](https://simpleslides.dev/aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2thY29sbGlucy9zdG9yZWQtcHJvY2VkdXJlcy9tYWluL1JFQURNRS5tZA==)
 * Kimberly Collins
 * SQL Server database developer for 17 years
 * [github.com/kacollins/stored-procedures](https://github.com/kacollins/stored-procedures)
@@ -30,20 +30,11 @@ A collection of SQL statements stored on the database server for later execution
     END
 
 ## Stored Procedures vs Views
-* View:
-    * Represents a virtual table based on a predefined query
-    * Can't have variables, multiple statements, or parameters
-    * `SELECT * FROM EmployeeSummary WHERE EmployeeID = 123`
-* Stored Procedure:
-    * Can use variables and one or more SQL statements to select data
-    * Can have input and output parameters
-    * `EXECUTE GetEmployeeDetails 123`
-
-## Table test
-| Syntax | Description |
+| View | Stored Procedure |
 | --- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+| Represents a virtual table based on a predefined query | Can use variables and one or more SQL statements to select data |
+| Can't have variables, multiple statements, or parameters | Can have input and output parameters |
+| `SELECT * FROM EmployeeSummary WHERE EmployeeID = 123` |  `EXECUTE GetEmployeeDetails 123` |
 
 ## Stored Procedures vs Functions
 * Function: 
