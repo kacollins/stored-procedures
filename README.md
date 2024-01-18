@@ -39,6 +39,12 @@ A collection of SQL statements stored on the database server for later execution
     * Can have input and output parameters
     * `EXECUTE GetEmployeeDetails 123`
 
+## Table test
+| Syntax | Description |
+| --- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+
 ## Stored Procedures vs Functions
 * Function: 
     * Returns a value or a table result that can be used in SQL
