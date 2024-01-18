@@ -1,4 +1,4 @@
-# [Stored Procedures](https://simpleslides.dev/aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2thY29sbGlucy9zdG9yZWQtcHJvY2VkdXJlcy9tYWluL1JFQURNRS5tZA==)
+# [Stored Procedures in SQL Server](https://simpleslides.dev/aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2thY29sbGlucy9zdG9yZWQtcHJvY2VkdXJlcy9tYWluL1JFQURNRS5tZA==)
 * Kimberly Collins
 * SQL Server database developer for 17 years
 * [github.com/kacollins/stored-procedures](https://github.com/kacollins/stored-procedures)
@@ -29,19 +29,17 @@ A collection of SQL statements stored on the database server for later execution
         WHERE EmployeeID = @EmployeeID
     END
 
-## Stored Procedures vs Views
 | View | Stored Procedure |
 | ---- | ---------------- |
 | * Represents a virtual table based on a predefined query | * Can use variables and one or more SQL statements to select or modify data |
 | * Can't have variables, multiple statements, or parameters | * Can have input and output parameters |
 | `SELECT *`<br>`FROM EmployeeSummary`<br>`WHERE EmployeeID = 123`|  `EXEC GetEmployeeDetails 123` |
 
-## Stored Procedures vs Functions
 | Function | Stored Procedure |
 | -------- | ---------------- |
-| * Returns a single value or a table that can be used in SQL | *  Doesn't necessarily return anything but can have multiple output parameters |
+| * Returns a single value or a table that can be used in SQL | *  Can have multiple output parameters but doesn't necessarily return data |
 | * Not intended to modify data | * Can be used to modify data |
-| `SELECT GETDATE()`<br>`SELECT Value FROM STRING_SPLIT('1,2,3', ',')`|  `EXEC GetEmployeeDetails 123` |
+| `SELECT GETDATE()`<br>`SELECT Value`<br>`FROM STRING_SPLIT('1,2,3', ',')`|  `EXEC GetEmployeeDetails 123` |
 
 ## Why use Stored Procedures?
 
