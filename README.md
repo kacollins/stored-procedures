@@ -31,10 +31,10 @@ A collection of SQL statements stored on the database server for later execution
 
 ## Stored Procedures vs Views
 | View | Stored Procedure |
-| --- | ----------- |
-| Represents a virtual table based on a predefined query | Can use variables and one or more SQL statements to select data |
-| Can't have variables, multiple statements, or parameters | Can have input and output parameters |
-| `SELECT * FROM EmployeeSummary WHERE EmployeeID = 123` |  `EXECUTE GetEmployeeDetails 123` |
+| ---- | ---------------- |
+| * Represents a virtual table based on a predefined query | * Can use variables and one or more SQL statements to select data |
+| * Can't have variables, multiple statements, or parameters | * Can have input and output parameters |
+| `SELECT * FROM EmployeeSummary WHERE EmployeeID = 123` |  `EXEC GetEmployeeDetails 123` |
 
 ## Stored Procedures vs Functions
 * Function: 
