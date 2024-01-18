@@ -32,15 +32,15 @@ A collection of SQL statements stored on the database server for later execution
 ## Stored Procedures vs Views
 | View | Stored Procedure |
 | ---- | ---------------- |
-| * Represents a virtual table based on a predefined query | * Can use variables and one or more SQL statements to select data |
+| * Represents a virtual table based on a predefined query | * Can use variables and one or more SQL statements to select or modify data |
 | * Can't have variables, multiple statements, or parameters | * Can have input and output parameters |
 | `SELECT *`<br>`FROM EmployeeSummary`<br>`WHERE EmployeeID = 123`|  `EXEC GetEmployeeDetails 123` |
 
 ## Stored Procedures vs Functions
 | Function | Stored Procedure |
-| ---- | ---------------- |
-| * Returns a value or a table result that can be used in SQL | *  Executes a series of SQL statements, such as modifying data or running complex queries |
-| * Can't have variables, multiple statements, or parameters | * Can have input and output parameters |
+| -------- | ---------------- |
+| * Returns a single value or a table that can be used in SQL | *  Doesn't necessarily return anything but can have multiple output parameters |
+| * Not intended to modify data | * Can be used to modify data |
 | `SELECT GETDATE()`<br>`SELECT Value FROM STRING_SPLIT('1,2,3', ',')`|  `EXEC GetEmployeeDetails 123` |
 
 ## Why use Stored Procedures?
