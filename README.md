@@ -34,7 +34,7 @@ A collection of SQL statements stored on the database server for later execution
 | ---- | ---------------- |
 | * Represents a virtual table based on a predefined query | * Can use variables and one or more SQL statements to select data |
 | * Can't have variables, multiple statements, or parameters | * Can have input and output parameters |
-| `SELECT * FROM EmployeeSummary WHERE EmployeeID = 123` |  `EXEC GetEmployeeDetails 123` |
+| `SELECT *`<br>`FROM EmployeeSummary`<br>`WHERE EmployeeID = 123`|  `EXEC GetEmployeeDetails 123` |
 
 ## Stored Procedures vs Functions
 * Function: 
