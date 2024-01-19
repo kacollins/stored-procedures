@@ -29,12 +29,14 @@ A collection of SQL statements stored on the database server for later execution
         WHERE EmployeeID = @EmployeeID
     END
 
+## Views vs Stored Procedures
 | View | Stored Procedure |
 | ---- | ---------------- |
 | * Represents a virtual table based on a predefined query | * Can use variables and one or more SQL statements to select or modify data |
 | * Can't have variables, multiple statements, or parameters | * Can have input and output parameters |
 | `SELECT *`<br>`FROM EmployeeSummary`<br>`WHERE EmployeeID = 123`|  `EXEC GetEmployeeDetails 123` |
 
+## Functions vs Stored Procedures
 | Function | Stored Procedure |
 | -------- | ---------------- |
 | * Returns a single value or a table that can be used in SQL | *  Can have multiple output parameters but doesn't necessarily return data |
