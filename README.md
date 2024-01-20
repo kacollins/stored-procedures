@@ -32,14 +32,14 @@ A collection of SQL statements stored on the database server for later execution
 ## Views vs Stored Procedures
 | View | Stored Procedure |
 | ---- | ---------------- |
-| * Represents a virtual table based on a predefined query | * Can use variables and one or more SQL statements to select or modify data |
+| * Represents a virtual table based on a predefined query | * Can use variables and one or more SQL statements to select or modify |
 | * Can't have variables, multiple statements, or parameters | * Can have input and output parameters |
 | `SELECT *`<br>`FROM EmployeeSummary`<br>`WHERE EmployeeID = 123`|  `EXEC GetEmployeeDetails 123` |
 
 ## Functions vs Stored Procedures
 | Function | Stored Procedure |
 | -------- | ---------------- |
-| * Returns a single value or a table that can be used in SQL | *  Can have multiple output parameters but doesn't necessarily return data |
+| * Returns a single value or a table that can be used in SQL | *  Can have output parameters but doesn't necessarily return data |
 | * Not intended to modify data | * Can be used to modify data |
 | `SELECT GETDATE()`<br>`SELECT Value`<br>`FROM STRING_SPLIT('1,2,3', ',')`|  `EXEC GetEmployeeDetails 123` |
 
@@ -51,7 +51,7 @@ SUM, AVG, COUNT, etc.
 ### Batch processing
 Updating large sets of data in a single operation
 
-### Complicated [joins](https://www.youtube.com/watch?v=2IGQFucnGR4)
+### Complex [joins](https://www.youtube.com/watch?v=2IGQFucnGR4)
 
 ### Set of multiple SQL statements
 * Single stored procedure call reduces network traffic
